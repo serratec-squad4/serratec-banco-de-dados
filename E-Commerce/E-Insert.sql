@@ -87,10 +87,10 @@ INSERT INTO pedido(data_pedido, status, cpf_cliente) VALUES
 
 -- Inserção de 5 Pedido_Produto
 INSERT INTO pedido_produto(id_pedido, id_produto, quantidade) VALUES
-(1, 5, 20),
-(1, 1, 76),
-(2, 2, 17),
-(3, 4, 8),
-(4, 3, 33),
-(5, 1, 76)
+(1, 5, 12),
+(1, 1, 6),
+(2, 2, 9),
+(3, 4, 22),
+(4, 3, 4),
+(5, 1, 7)
 ;

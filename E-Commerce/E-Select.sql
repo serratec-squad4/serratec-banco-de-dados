@@ -1,7 +1,7 @@
 -- 7. 5 SQLs de consulta
 --		a. Pelo menos 2 com algum tipo de junção
 
--- Usuários
+-- Usuários x Cliente
 SELECT 
 	cliente.primeiro_nome as "NOME", 
 	cliente.sobrenome as "SOBRENOME", 

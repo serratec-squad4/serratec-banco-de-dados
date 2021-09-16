@@ -13,4 +13,4 @@ WHERE 3 <= (SELECT p.qtd_estoque FROM produto p WHERE p.id = 3);
 -- LIberar Pedido
 UPDATE pedido
 SET status = '1'
-WHERE id = 1;
+WHERE id = 1 AND (SELECT p.qtd_estoque FROM produto p WHERE p.id = 3) >= 3;
