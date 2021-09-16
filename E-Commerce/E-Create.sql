@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS endereco(
 );
 
 -- CLIENTE_ENDEREÇO
-CREATE TABLE cliente_endereco(
+CREATE TABLE IF NOT EXISTS cliente_endereco(
     cpf_cliente VARCHAR(11) REFERENCES cliente(cpf) NOT NULL,
     id_endereco INT REFERENCES endereco(id) NOT NULL,
 
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS produto(
     nome VARCHAR(50) NOT NULL,
     descricao VARCHAR(100) NOT NULL,
     data_fabricacao DATE NOT NULL,
-    valor DECIMAL(10,2) NOT NULL,
+    valor_unitario DECIMAL(10,2) NOT NULL,
     qtd_estoque INT NOT NULL DEFAULT 0,
 
     id_categoria INT REFERENCES categoria(id) NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS pedido(
 );
 
 --PEDIDO_ITEM
-CREATE TABLE IF NOT EXISTS pedido_item(
+CREATE TABLE IF NOT EXISTS pedido_produto(
   id_pedido INT REFERENCES pedido(id) NOT NULL,
   id_produto INT REFERENCES produto(id) NOT NULL,
   quantidade INT CHECK (quantidade > 0) NOT NULL,
