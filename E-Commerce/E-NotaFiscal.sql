@@ -10,7 +10,7 @@ SELECT 1, '23744651000179',
   FROM 
   (
       SELECT
-          produto.valor * pedido_produto.quantidade "total"
+          produto.valor_unitario * pedido_produto.quantidade "total"
 
       FROM pedido
       INNER JOIN cliente ON (pedido.cpf_cliente = cliente.cpf)
@@ -32,8 +32,8 @@ SELECT
     cliente.email_usuario "E-MAIL DO CLIENTE",
     produto.nome "NOME DO PRODUTO",
     pedido_produto.quantidade "QUANTIDADE DO PRODUTO",
-    produto.valor "VALOR DO PRODUTO",
-    produto.valor * pedido_produto.quantidade "TOTAL DO PRODUTO",
+    produto.valor_unitario "VALOR DO PRODUTO",
+    produto.valor_unitario * pedido_produto.quantidade "TOTAL DO PRODUTO",
     nota_fiscal.valor_total "VALOR TOTAL DA NOTA"
     
 FROM pedido
@@ -45,6 +45,6 @@ INNER JOIN nota_fiscal ON (nota_fiscal.id_pedido = pedido.id)
 WHERE nota_fiscal.id = 1
 
 GROUP BY pedido.id, cliente.cpf, produto.id, pedido_produto.quantidade, nota_fiscal.id
-ORDER BY produto.valor ASC;
+ORDER BY produto.valor_unitario ASC;
 
 --TRUNCATE TABLE nota_fiscal RESTART IDENTITY;
