@@ -2,7 +2,7 @@
 
 -- Inserção da Nota para Pedidos Liberados
 INSERT INTO nota_fiscal(id_pedido, cnpj_empresa, valor_total)
-SELECT 1, '07780221000104',
+SELECT 1, '23744651000179',
 (
   SELECT
     SUM(total) "TOTAL DA NOTA"
