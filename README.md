@@ -1,12 +1,12 @@
 O projeto final de Banco de dados deve conter as tabelas obrigatórias:
 
-● Cliente
-● Pedido
-● PedidoItem
-● Produto
-● Categoria
-● NotaFiscal
-● Usuário
+● Cliente  
+● Pedido  
+● PedidoItem  
+● Produto  
+● Categoria  
+● NotaFiscal  
+● Usuário  
 
 Levantamento de requisitos:
 
