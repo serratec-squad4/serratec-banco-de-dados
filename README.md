@@ -32,7 +32,7 @@ Aplicando o que aprendemos:
 4. SQL de inserção de dados nas tabelas (pelo menos 5 registros em cada uma)
 5. Um comando SQL de atualização em algum registro em uma tabela
 6. Um comando SQL de exclusão de algum registro em uma tabela
-7. 5 SQLs de consulta
+7. 5 SQLs de consulta  
 	a. Pelo menos 2 com algum tipo de junção  
 	b. Pelo menos 1 com usando count() e group by()  
 	c. 1 SQL para construção de nota fiscal  
