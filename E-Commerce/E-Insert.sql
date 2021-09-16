@@ -69,11 +69,11 @@ INSERT INTO categoria(nome, descricao) VALUES
 
 -- Inserção de 5 Produtos
 INSERT INTO produto(nome, descricao, data_fabricacao, valor_unitario, qtd_estoque, id_categoria, cpf_funcionario) VALUES
-('Suco Folhaz', 'Suco de Ervas', '2021-09-13', 7.90, 7, 1, '12345678968'),
-('Abacaxi Mix', 'Abacaxi com ervas', '2021-09-15', 12.90, 1, 2, '12248578988'),
-('Wrap Mix', 'Wrap de Ervas ', '2021-09-09', 10.15, 3, 3, '59856745845'),
-('Combo Suave', 'lanche + Doce de Ervas ', '2021-09-15', 23.90, 2, 4, '85698741025'),
-('Energia Total', 'Refeição Completa', '2021-09-15', 7.90, 3, 5, '12356854749')
+('Suco Folhaz', 'Suco de Ervas', '2021-09-13', 7.90, 50, 1, '12345678968'),
+('Abacaxi Mix', 'Abacaxi com ervas', '2021-09-15', 12.90, 25, 2, '12248578988'),
+('Wrap Mix', 'Wrap de Ervas ', '2021-09-09', 10.15, 47, 3, '59856745845'),
+('Combo Suave', 'lanche + Doce de Ervas ', '2021-09-15', 23.90, 63, 4, '85698741025'),
+('Energia Total', 'Refeição Completa', '2021-09-15', 7.90, 16, 5, '12356854749')
 ;
 
 -- Inserção de 5 Pedidos
