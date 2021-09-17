@@ -2,9 +2,9 @@
 INSERT INTO empresa(cnpj, razao_social) VALUES
 ('23744651000179','Doce Magia'),
 ('65789712000166','Naturali'),
-('345998711000153','Sabor Natural'),
-('1258554340001389','Natureba'),
-('872899897000165','Natus')
+('34599871100013','Sabor Natural'),
+('12555434000138','Natureba'),
+('87299897000165','Natus')
 ;
 
 -- Inserção de 5 Usuários
@@ -23,11 +23,11 @@ INSERT INTO usuario(email, hash_senha) VALUES
 
 -- Inserção de 5 Funcionários
 INSERT INTO funcionario(cpf, nome, email_usuario, cnpj_empresa) VALUES
-('12345678968','José da Silva', 'jose@jose.com','07780221000104'),
-('12248578988','Maria Pereira', 'maria@maria.com','07780221000104'),
-('59856745845','Pedro Oliveira', 'pedro@pedro.com','07780221000104'),
-('85698741025','Flávio de Castro', 'flavio@flavio.com','07780221000104'),
-('12356854749','Ricardo Almeida', 'ricardo@ricardo.com','07780221000104')
+('12345678968','José da Silva', 'jose@jose.com','23744651000179'),
+('12248578988','Maria Pereira', 'maria@maria.com','65789712000166'),
+('59856745845','Pedro Oliveira', 'pedro@pedro.com','34599871100013'),
+('85698741025','Flávio de Castro', 'flavio@flavio.com','12555434000138'),
+('12356854749','Ricardo Almeida', 'ricardo@ricardo.com','87299897000165')
 ;
 
 -- Inserção de 5 Endereços
@@ -69,11 +69,11 @@ INSERT INTO categoria(nome, descricao) VALUES
 
 -- Inserção de 5 Produtos
 INSERT INTO produto(nome, descricao, data_fabricacao, valor_unitario, qtd_estoque, id_categoria, cpf_funcionario) VALUES
-('Suco Folhaz', 'Suco de Ervas', '2021-09-13', 7.90, 7, 1, '07780221000104'),
-('Abacaxi Mix', 'Abacaxi com ervas', '2021-09-15', 12.90, 1, 2, '07780221000104'),
-('Wrap Mix', 'Wrap de Ervas ', '2021-09-09', 10.15, 3, 3, '07780221000104'),
-('Combo Suave', 'lanche + Doce de Ervas ', '2021-09-15', 23.90, 2, 4, '07780221000104'),
-('Energia Total', 'Refeição Completa', '2021-09-15', 7.90, 3, 5, '07780221000104')
+('Suco Folhaz', 'Suco de Ervas', '2021-09-13', 7.90, 50, 1, '12345678968'),
+('Abacaxi Mix', 'Abacaxi com ervas', '2021-09-15', 12.90, 25, 2, '12248578988'),
+('Wrap Mix', 'Wrap de Ervas ', '2021-09-09', 10.15, 47, 3, '59856745845'),
+('Combo Suave', 'lanche + Doce de Ervas ', '2021-09-15', 23.90, 63, 4, '85698741025'),
+('Energia Total', 'Refeição Completa', '2021-09-15', 7.90, 16, 5, '12356854749')
 ;
 
 -- Inserção de 5 Pedidos
@@ -87,10 +87,10 @@ INSERT INTO pedido(data_pedido, status, cpf_cliente) VALUES
 
 -- Inserção de 5 Pedido_Produto
 INSERT INTO pedido_produto(id_pedido, id_produto, quantidade) VALUES
-(1, 5, 20),
-(1, 1, 76),
-(2, 2, 17),
-(3, 4, 8),
-(4, 3, 33),
-(5, 1, 76)
+(1, 5, 12),
+(1, 1, 6),
+(2, 2, 9),
+(3, 4, 22),
+(4, 3, 4),
+(5, 1, 7)
 ;
